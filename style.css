@@ -8,6 +8,7 @@
     width: 400px;
     height: 100px;
     background-color: #141f40;
+    position: relative;
 
 }
 
@@ -19,31 +20,37 @@
     background-color: white;
     justify-content: space-between;
     align-items: center;
-
+    position: absolute;
+top: 20px;
+right: 20px;
     
 }
 
 .box1 {
    width: 40px;
-   height: 40px;
-    
+   height: 40px; 
     background-color:#a9004b ;
-
+position: absolute;
+top: 10px;
+left: 10px;
 }
 
 .box2 {
     width: 40px;
     height: 40px;
-     
      background-color:#a9004b ;
- 
+     position: absolute;
+     top: 10px;
+     left: 60px;
  }
  
  .box3 {
     width: 40px;
     height: 40px;
-     
      background-color:#a9004b ;
+     position: absolute;
+top: 10px;
+right: 10px;
  
  }
  
@@ -64,25 +71,33 @@
     background-color: #8c2727;
     float: left;
 }
+.block1 {
+    width: 160px;
+    height: 50px;
+    background-color: white;
+}
 
-.border-box2 {
-box-sizing: border-box;
-    flex-direction: column;
-justify-content: space-between;
+.block2 {
+    width: 160px;
+    height: 50px;
+    background-color: white;
+}
 
+.block3 {
+    width: 160px;
+    height: 50px;
+    background-color: white;
 }
 
 
-.box4 {
+.block4 {
 width: 140px;
 height: 40px;
 background-color: #ff863f;
-
-
 }
 
 
-.box5 {  
+.block5 {  
     width: 140px;
     height: 40px;
     background-color: #ff863f;
@@ -90,11 +105,11 @@ background-color: #ff863f;
 }
 
 
-.box6 {
+.block6 {
     width: 140px;
     height: 40px;
     background-color: #ff863f;
-    
+
 }
 
 
