@@ -29,13 +29,15 @@
 
 .left{
     width: 200px;
+    height: 100px;
+    float: none;
 }
 
 .right{
     width: 200px;
+    height: 220px;
+    float: none;
 }
-
-
 .block1 {
     top: 20px;
     left: 30px;
