@@ -4,8 +4,10 @@ $my_number = $_GET['my_number'];
 
 
 <?php
-$num_arr = str_split($my_number);
-$num_key = array_rand($num_arr);
+$my_number = "0123456789";
+$num_array = str_split($my_number);
+$array = ['0'=>'凶','0~3'=>'小吉','4~6'=>'中吉','7~8'=>'吉','9'=>'大吉'];
+$num_key = array_rand($num_arr,2);
 $result = $num_arr[$num_key];
 ?>
 <?php
@@ -30,5 +32,5 @@ if (凶の場合の条件) {
 <?php
 echo strtotime("1970/8/24 13:31:51");
 <p>の運勢は</p>
-
+?>
 
