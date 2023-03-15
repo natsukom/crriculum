@@ -12,11 +12,11 @@ $num_array = str_split($my_number);
 $num_key = array_rand($num_array,1);
 $result = $num_array[$num_key];
 ?>
-選ばれた数字は<br>
+選ばれた数字は
 <?php echo $result?>
-
+<br>
 <?php
-if ($num_array ==0) {
+if ($str ==0) {
     echo "凶です";
 } elseif ($num_array >= 1 and $num_key <= 3) {
     echo "小吉です";
