@@ -16,13 +16,13 @@ $result = $num_array[$num_key];
 <?php echo $result?>
 <br>
 <?php
-if ($str ==0) {
+if ($result ==0) {
     echo "凶です";
-} elseif ($num_array >= 1 and $num_key <= 3) {
+} elseif ($result >= 1 and $result <= 3) {
     echo "小吉です";
-} elseif ($num_array >= 4 and $num_key <= 6) {
+} elseif ($result >= 4 and $result <= 6) {
     echo "中吉です";
-} elseif ($num_array >= 7 and $num_key <= 8) {
+} elseif ($result >= 7 and $result <= 8) {
     echo "吉です";
 } else {
     echo "大吉です";
