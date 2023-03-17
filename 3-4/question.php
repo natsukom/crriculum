@@ -1,10 +1,12 @@
-<?php
+
 //POST送信で送られてきた名前を受け取って変数を作成
 $my_name = $_POST['my_name'];
 //①画像を参考に問題文の選択肢の配列を作成してください。
+<?php
 $question = array(80,22,20,21);
 $question = array(PHP,Python,JAVA,HTML);
 $question = array(join,select,insert,update);
+?>
 //② ①で作成した、配列から正解の選択肢の変数を作成してください
 <?php
 $answer = array("80","22","20","21");
@@ -25,7 +27,7 @@ for($i = 0; $i < count($array); $i++){
 echo $[$i];
 echo "<br>";
 }
-
+?>
 
 <p>お疲れ様です<!--POST通信で送られてきた名前を出力-->さん</p>
 <p>名前:<?php echo $name ?>yutoさん</p>
@@ -63,11 +65,11 @@ foreach ($question as $value) {
 <!--問題の正解の変数と名前の変数を[answer.php]に送る-->
 
 <?php foreach ($question as $value){ ?>
-    <input type="radio" name="question" required="required" value="<?php echo $value; ?>" /><?php echo $value ?> <br>
-    <?php } ?>
+    <input type="radio" name="question" required="required" value="<?php echo $value; ?>" /><?php echo $value ?> 
     <br>
-    
-    
+     } 
+    <br>
+
     <input type="hidden" name="answer" value="<?php echo $answer?>">
     <input type="submit" value="回答する">
     
